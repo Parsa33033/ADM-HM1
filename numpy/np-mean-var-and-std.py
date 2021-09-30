@@ -1,0 +1,9 @@
+import numpy as np
+n, m = list(map(int, input().strip().split()))
+arr = []
+for i in range(n):
+    arr.append(list(map(int, input().strip().split())))
+arr = np.array(arr)
+print(np.mean(arr, axis=1))
+print(np.var(arr, axis=0))
+print(np.round(np.std(arr, axis=None),11))
