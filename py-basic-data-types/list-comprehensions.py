@@ -1,27 +1,6 @@
-www
-
-# x = int(input().strip())
-# y = int(input().strip())
-# z = int(input().strip())
-# n = int(input().strip())
-# l = []
-
-a = [1,2,3]
-
-def swap(a, n, m):
-    l = a
-    temp = l[m]
-    l[m] = l[n]
-    l[n] = temp
-    return l
-
-def permutation(a, n):
-    s = len(a)
-    if n == s:
-        return
-    for i in range(n, s):
-        li = swap(a, n, i)
-        permutation(a, ie)
-
-
-permutation(a, 0)
+x = int(input().strip())
+y = int(input().strip())
+z = int(input().strip())
+n = int(input().strip())
+l = [[i,j,k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n]
+print(l)
