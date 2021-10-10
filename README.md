@@ -21,3 +21,7 @@
     2) Decorator 2 name directory
     3) Recursive digit sum
     4) Validating UID
+    
+# Submissions
+
+submission.pdf file is in the root directory
